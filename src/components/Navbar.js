@@ -41,7 +41,7 @@ function Navbar() {
               to="headerbg"
               style={{ cursor: "pointer" }}
             >
-              DarkLeas
+              景译供应链有限公司
             </Link>
           </h1>
           <ul className="bar">
@@ -54,7 +54,7 @@ function Navbar() {
                 duration={1000}
                 to="headerbg"
               >
-                Home
+                首页
               </Link>
             </li>
             <li>
@@ -66,7 +66,7 @@ function Navbar() {
                 smooth={true}
                 duration={1000}
               >
-                Services
+                业务板块
               </Link>
             </li>
             <li>
@@ -78,7 +78,7 @@ function Navbar() {
                 duration={1000}
                 activeClass="active"
               >
-                About
+                关于我们
               </Link>
             </li>
             <li>
@@ -90,7 +90,7 @@ function Navbar() {
                 duration={1000}
                 activeClass="active"
               >
-                Contact
+                联系方式
               </Link>
             </li>
           </ul>
