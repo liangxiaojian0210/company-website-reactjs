@@ -1,27 +1,27 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 90vh; /* 缩短高度为视口的60% */
+  height: 70vh; /* 缩短高度为视口的60% */
   min-height: 400px; /* 最小高度确保在小屏幕上也能正常显示 */
-  max-height: 600px; /* 最大高度限制 */
+  max-height: 3000px; /* 最大高度限制 */
   overflow: hidden;
   margin-bottom: 2rem; /* 添加底部间距 */
 }
-  
-  .carousel-slide {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .carousel-media {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持图片比例并填充容器 */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
   
   .slide-content {
     position: absolute;

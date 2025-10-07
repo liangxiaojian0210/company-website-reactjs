@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <div className="container contact">
-      <h2 className="main-title text-center">联系方式</h2>
+      <h2 className="main-title text-center">联系我们</h2>
       <div className="col-md-12">
         <div className="row">
           <div className="col-md-4 mb-1">

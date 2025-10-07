@@ -90,7 +90,7 @@ function Navbar() {
                 duration={1000}
                 activeClass="active"
               >
-                联系方式
+                联系我们
               </Link>
             </li>
           </ul>

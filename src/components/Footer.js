@@ -42,7 +42,7 @@ function Footer() {
           <div className="side2">
             <div className="row">
               <div className="col-md-3">
-                <p className="footer-title">联系我们</p>
+                <p className="footer-title">联系方式</p>
                 <ul>
                   <li>
                     <Link to="#" >darren.hu@jingyigyl.com.cn</Link>
