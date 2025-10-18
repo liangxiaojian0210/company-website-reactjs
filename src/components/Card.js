@@ -1,6 +1,18 @@
+import { useNavigate } from 'react-router-dom';
+
 function Card(props) {
+  const navigate = useNavigate();
+  
+  const handleCardClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (props.productId) {
+      navigate(`/product/${props.productId}`);
+    }
+  };
+
   return (
-    <div className="card">
+    <div className="card" onClick={handleCardClick} style={{ cursor: 'pointer' }}>
       <br />
       <div className="text-center">
         <img 
@@ -18,6 +30,11 @@ function Card(props) {
           {props.text}
         </p>
       </div>
+      {props.productId && (
+        <div className="text-center p-3">
+          <span className="view-details">点击查看详情 →</span>
+        </div>
+      )}
     </div>
   );
 }

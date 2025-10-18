@@ -1,4 +1,5 @@
 import Card from "./Card";
+
 function Services() {
   return (
     <div className="container services">
@@ -11,7 +12,7 @@ function Services() {
                           title="农产品原料" 
                           img="service_nongfu.png" 
                           text=""
-                          productId="agricultural-products" // 添加产品ID
+                          productId="agricultural-products"
                         />
                     </div>
                     <div className="col-md-4 mb-2">
@@ -19,7 +20,7 @@ function Services() {
                           title="玻璃瓶" 
                           img="service_boliping.png" 
                           text=""
-                          productId="glass-bottles" // 添加产品ID
+                          productId="glass-bottles"
                         />
                     </div>
                 </div>

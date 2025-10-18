@@ -334,6 +334,17 @@ footer ul li a {
   transform:scale(1.03);
 }
 
+.view-details {
+  color: #01bf71;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.card:hover .view-details {
+  color: #019a5a;
+}
+
 .services .col-md-4 {
   margin: 1rem 1rem 1rem 1rem;
 

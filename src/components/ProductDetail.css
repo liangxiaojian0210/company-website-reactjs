@@ -1,0 +1,321 @@
+/* ProductDetail.css - 列表样式 */
+.product-detail {
+  padding: 2rem 0;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+.product-header {
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  background-color: #01bf71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #019a5a;
+}
+
+.product-title {
+  font-size: 48px;
+  color: #01bf71;
+  margin: 0;
+  text-align: center;
+}
+
+/* 产品类型介绍样式 */
+.category-intro {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 列表容器样式 */
+.product-list-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-list-item {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* 列表项头部 */
+.list-item-header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #01bf71, #019a5a);
+  color: white;
+}
+
+.list-item-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  margin-right: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-item-title h2 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* 列表项内容 */
+.list-item-content {
+  padding: 2rem;
+}
+
+.list-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.list-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.list-section-title {
+  color: #01bf71;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.list-section-title:before {
+  content: "▶";
+  margin-right: 0.5rem;
+  font-size: 14px;
+}
+
+.list-section-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* 特点列表样式 */
+.list-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-feature-item {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.list-feature-item:before {
+  content: "✓";
+  color: #01bf71;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* 规格列表样式 */
+.list-specifications {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.list-spec-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #01bf71;
+}
+
+.list-spec-label {
+  font-weight: 600;
+  color: #01bf71;
+  font-size: 16px;
+  min-width: 120px;
+  margin-right: 1rem;
+}
+
+.list-spec-value {
+  color: #333;
+  font-size: 16px;
+  flex: 1;
+}
+
+/* 操作按钮样式 */
+.list-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-btn,
+.quote-btn {
+  flex: 1;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.contact-btn {
+  background-color: #01bf71;
+  color: white;
+}
+
+.contact-btn:hover {
+  background-color: #019a5a;
+  transform: translateY(-2px);
+}
+
+.quote-btn {
+  background-color: transparent;
+  color: #01bf71;
+  border: 2px solid #01bf71;
+}
+
+.quote-btn:hover {
+  background-color: #01bf71;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.product-not-found {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.product-not-found h2 {
+  color: #01bf71;
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .list-item-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .list-item-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .list-item-title h2 {
+    font-size: 28px;
+  }
+  
+  .product-title {
+    font-size: 36px;
+  }
+  
+  .list-actions {
+    flex-direction: column;
+  }
+  
+  .list-item-content {
+    padding: 1.5rem;
+  }
+  
+  .list-spec-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .list-spec-label {
+    min-width: auto;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-title {
+    font-size: 28px;
+  }
+  
+  .list-item-title h2 {
+    font-size: 24px;
+  }
+  
+  .list-section-title {
+    font-size: 18px;
+  }
+  
+  .list-section-text {
+    font-size: 14px;
+  }
+  
+  .list-feature-item {
+    font-size: 14px;
+  }
+  
+  .list-spec-label,
+  .list-spec-value {
+    font-size: 14px;
+  }
+  
+  .contact-btn,
+  .quote-btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+  
+  .list-item-content {
+    padding: 1rem;
+  }
+  
+  .list-item-header {
+    padding: 1rem;
+  }
+}
